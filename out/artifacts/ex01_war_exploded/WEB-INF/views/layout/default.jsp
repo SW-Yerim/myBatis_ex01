@@ -10,6 +10,7 @@
 <html>
 
 <%-- css --%>
+<link rel="stylesheet" href="<c:url value='/resources/css/reset.css'/>">
 <link rel="stylesheet" href="<c:url value='/resources/css/common.css'/>">
 
 <%-- js --%>

@@ -1,29 +1,127 @@
 /**************************************************
-   reset CSS
+   common CSS
 **************************************************/
-html,body{width:100%;height:100%;}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select,td,th,table,pre,strong,b,i,textarea{margin:0;padding:0; }
-body,h1,h2,h3,h4,h5,h6,input,button,pre,textarea,select{font-family:'돋움',Dotum,'굴림',Gulim,sans-serif;font-size:14px;}
-body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all;/*overflow:auto;*/}
-img,fieldset,iframe{border:0 none}
-li{list-style:none}
-input,select,button,img{vertical-align:middle}
-i,em,address{font-style:normal}
-label,button{cursor:pointer}
-button{margin:0;padding:0}
-button *{position:relative}
-button img{left:-3px;*left:auto}
-html:first-child select{height:20px;padding-right:6px}
-option{padding-right:6px}
-textarea {resize:none;border:1px solid #c3c3c3;}
-hr{display:none}
-legend{*width:0}
-table{border-collapse:collapse;border-spacing:0}
-map area{outline:none}
-a {text-decoration:none;color:#4a4a4a;}
-a:hover {}
-a:active {}
-a:visited {}
-input[type="button"] {cursor:pointer;}
-input[type="text"] {height:22px;border:1px solid #c3c3c3;}
-input[type="password"] {height:22px;border:1px solid #c3c3c3;  text-indent: 7px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select,td,th,table,pre,strong,b,i,textarea{
+    line-height: 40px;
+}
+.center {
+    text-align: center !important;
+}
+.left {
+    text-align: left !important;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/**************************************************
+   header CSS
+**************************************************/
+.black {
+
+}
+.header {
+    margin: 50px 0 100px;
+}
+
+.header .user-nav {
+    overflow: hidden;
+    width: 900px;
+    margin: 0 auto 20px;
+}
+.header .user-nav ul {
+    display: inline-block;
+    float: right;
+}
+.header .user-nav li {
+    display: inline-block;
+    float: left;
+}
+.header .user-nav a {
+    padding: 0 20px;
+    border-right: 1px solid #000;
+}
+.header .user-nav li:last-child a {
+    border-right: 0;
+}
+
+.header .content-nav {
+    position: relative;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.header .content-nav > ul {
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
+}
+.header .content-nav > ul > li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+.header .content-nav > ul > li > a {
+    padding: 0 40px;
+    margin: 0 40px;
+}
+.header .content-nav > ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+}
+.header .content-nav > ul ul.active {
+    display: block;
+}
+.header .content-nav > ul ul li {
+    display: inline-block;
+    line-height: 60px;
+}
+.header .content-nav > ul ul li a {
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+
+/**************************************************
+   board CSS
+**************************************************/
+.board {
+    width: 100%;
+}
+.board th {
+
+}
+.board td {
+    text-align: center;
+}
+.board li {
+    line-height: 40px;
+}
+.board li a {
+
+}
+
+
+/**************************************************
+   black CSS
+**************************************************/
+.black {
+
+}
+.black .header .user-nav a {
+    border-right: 1px solid #fff;
+}
+
+.black .header .content-nav {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
