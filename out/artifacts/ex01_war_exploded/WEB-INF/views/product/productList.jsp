@@ -12,8 +12,10 @@
 </head>
 <body class="black">
     <%@ include file="/WEB-INF/views/layout/header.jsp" %>
-    <div class="content">
-        <h2>상품 리스트</h2>
+    <div class="content product">
+        <div class="content-tit">
+            <h2>상품 리스트</h2>
+        </div>
         <table class="board">
             <tr>
                 <th>번호</th>

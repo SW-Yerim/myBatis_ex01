@@ -16,12 +16,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
     margin: 0 auto;
 }
 
+
 /**************************************************
    header CSS
 **************************************************/
-.black {
-
-}
 .header {
     margin: 50px 0 100px;
 }
@@ -57,7 +55,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
     width: 600px;
     margin: 0 auto;
 }
-.header .content-nav > ul > li {
+.header .content-nav .content-nav-menu {
     display: inline-block;
     width: 50%;
     float: left;
@@ -65,11 +63,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
     font-size: 18px;
     text-align: center;
 }
-.header .content-nav > ul > li > a {
-    padding: 0 40px;
-    margin: 0 40px;
-}
-.header .content-nav > ul ul {
+.header .content-nav .content-nav-menu ul {
     display: none;
     position: absolute;
     top: 60px;
@@ -78,18 +72,33 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
     width: 100%;
     overflow: hidden;
 }
-.header .content-nav > ul ul.active {
-    display: block;
-}
-.header .content-nav > ul ul li {
+.header .content-nav .content-nav-menu li {
     display: inline-block;
     line-height: 60px;
 }
-.header .content-nav > ul ul li a {
+.header .content-nav .content-nav-menu li a {
     padding: 0 20px;
     margin: 0 20px;
 }
+.header .content-nav .content-nav-menu.active span {
+    font-weight: bold;
+}
+.header .content-nav .content-nav-menu.active ul {
+    display: block;
+}
 
+
+
+/**************************************************
+   content CSS
+**************************************************/
+.content .content-tit {
+    margin-bottom: 50px;
+}
+.content .content-tit h2 {
+    font-size: 24px;
+    text-align: center;
+}
 
 /**************************************************
    board CSS
@@ -98,10 +107,12 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
     width: 100%;
 }
 .board th {
-
+    line-height: 60px;
+    border-bottom: 1px solid #000;
 }
 .board td {
     text-align: center;
+    border-bottom: 1px solid #000;
 }
 .board li {
     line-height: 40px;
@@ -115,7 +126,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
    black CSS
 **************************************************/
 .black {
-
+    background: #000000;
+    color: #fff;
+}
+.black a {
+    color: #fff;
 }
 .black .header .user-nav a {
     border-right: 1px solid #fff;
@@ -123,5 +138,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select
 
 .black .header .content-nav {
     border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.black .content .content-tit {
+    color: #fff !important;
+}
+.black .content .content-tit h2 {
+    color: #eee !important;
+}
+
+.black .board th {
+    border-bottom: 1px solid #fff;
+}
+.black .board td {
     border-bottom: 1px solid #fff;
 }

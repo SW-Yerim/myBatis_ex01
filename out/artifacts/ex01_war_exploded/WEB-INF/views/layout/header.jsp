@@ -22,9 +22,9 @@
     </div>
     <div class="content-nav">
         <ul>
-            <li>
+            <li class="content-nav-menu active" onmouseenter="conNav(0)">
                 <span>브랜드</span>
-                <ul class="active">
+                <ul>
                     <li><a href="#">Electra</a></li>
                     <li><a href="#">Haro</a></li>
                     <li><a href="#">Heller</a></li>
@@ -36,7 +36,7 @@
                     <li><a href="#">Trek</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="content-nav-menu" onmouseenter="conNav(1)">
                 <span>카테고리</span>
                 <ul>
                     <li><a href="#">Children Bicycles</a></li>

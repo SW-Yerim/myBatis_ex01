@@ -1,0 +1,33 @@
+/**************************************************
+   product CSS
+**************************************************/
+.product {
+}
+
+.product .board th:nth-child(1) {
+    width: 50px;
+}
+.product .board th:nth-child(2) {
+    width: 180px;
+}
+.product .board th:nth-child(4) {
+    width: 100px;
+}
+.product .board th:nth-child(5),
+.product .board th:nth-child(6) {
+    width: 80px;
+}
+
+.product .board td:nth-child(1) {
+    width: 50px;
+}
+.product .board td:nth-child(2) {
+    width: 180px;
+}
+.product .board td:nth-child(4) {
+    width: 100px;
+}
+.product .board td:nth-child(5),
+.product .board td:nth-child(6) {
+    width: 80px;
+}
